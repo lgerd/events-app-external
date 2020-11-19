@@ -11,14 +11,17 @@
 </head> 
 <body style="background-color:rgb(183, 193, 194);">
   <div class="container">
-      <h1> <p class= "bg-light text-primary"> Welcome to He who shall not be named Application</p></h1>
+      <h1> <p class= "bg-dark text-danger">He Who Shall Not Be Named Events</p></h1>
     {{{body}}}
 </div>
 <div class="container">
   <h2>Add an event</h2>
     <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
+       Title: <input name="title" type="text" /> <br />
+       Description: <input name="description" type="text" /> <br />
+       Date: <input name="date" type="date" /> <br />
+       Location: <input name="description" type="text"/> <br />
+       Hogwarts House: <input name="Hogwarts House" type="text" />
        <br />
         <input type="submit" name="submit" value="submit"class="btn btn-primary btn-lg" />
     </form>
