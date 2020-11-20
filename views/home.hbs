@@ -1,11 +1,26 @@
 <ul >
   {{#events}}
-    <li>
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-        <p>{{date}}</p>
-        <p>{{location}}</p>
-        <p>{{hogwartshouse}}</p>
-    </li>
+        <div class="container">
+            <h2>{{title}}</h2>          
+             <table class="table table-striped">
+                  <thead>
+                 <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Location</th>
+        <th>Hogwarts House</th>
+        </tr>
+        </thead>
+            <tbody>
+
+ <th>{{ title }}</th>
+        <th>{{ description }}</th>
+        <th>{{date}}</th>
+        <th>{{location}}</th>
+        <th>{{hogwartshouse}}</th>
+</tbody>
+        </table>
+        </div>
   {{/events}}
 </ul>
